@@ -65,15 +65,18 @@
       "id": "stm",
       "name": "STM",
       "bbox": [
-        -73.7260800545552, 45.44372029100138, -73.52186189872911,
-        45.59972319599818
+        -73.7260800545552, 45.42733936811584, -73.52186189872911, 45.59972319599818
       ],
       "data": [
         "montreal/green.json",
         "montreal/orange.json",
+        "montreal/orangeExtension.json",
         "montreal/yellow.json",
         "montreal/blue.json",
-        "montreal/blueExtension.json"
+        "montreal/blueExtension.json",
+        "montreal/tramwayLasalle1.json",
+        "montreal/tramwayLasalle2.json",
+        "montreal/tramwayLasalle3.json"
       ]
     },
     {
@@ -81,6 +84,12 @@
       "name": "REM",
       "bbox": [-73.9144974, 45.4305912, -73.425561, 45.67481794612502],
       "data": ["montreal/rem.json", "montreal/brossardmaintenance.json"]
+    },
+    {
+      "id": "rem-est",
+      "name": "REM de l'Est",
+      "bbox": [-73.9144974, 45.4305912, -73.425561, 45.67481794612502],
+      "data": ["montreal/remEst.json"]
     },
     {
       "id": "ctransit",
@@ -199,6 +208,12 @@
         "vancouver/milleniummaintenance.json",
         "vancouver/canadamaintenance.json"
       ]
+    },
+    {
+      "id": "rtl",
+      "name": "RTL",
+      "bbox": [-73.51962425575249, 45.437801650459846, -73.43005304723323, 45.54519884424212],
+      "data": ["longueuil/tramwayLongueuil1.json","longueuil/tramwayLongueuil2.json"]
     }
   ],
 
@@ -218,7 +233,7 @@
       "title": "Montréal",
       "agencies": ["stm", "rem"],
       "location": [-73.59991, 45.49535],
-      "bbox": [-73.9144974, 45.4305912, -73.425561, 45.59972319599818]
+      "bbox": [-73.9144974, 45.42733936811584, -73.425561, 45.59972319599818]
     },
     {
       "id": "calgary",
@@ -273,6 +288,13 @@
       "agencies": ["viarail", "charlevoix"],
       "location": [-79.383849, 43.653482],
       "bbox": [-130.35971, 42.29556, -63.26974, 58.76772]
+    },
+    {
+      "id": "longueuil",
+      "title": "Longueuil",
+      "agencies": ["rtl", "rem", "stm"],
+      "location": [-73.46456437077012, 45.52185812709476],
+      "bbox": [-73.51962425575249, 45.437801650459846, -73.43005304723323, 45.54519884424212]
     }
   ]
 }
